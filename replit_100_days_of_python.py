@@ -1,3 +1,32 @@
+# day13, marks grading
+skill  = input("what are you learning: ")
+maxpoints = int(input("What is max no. of points: "))
+points = int(input("What are your points: "))
+
+if points > maxpoints:
+  print("Get the fuck outta here")
+elif  points == maxpoints: 
+  print("You are a master")
+elif (maxpoints - (maxpoints//5)) <= points < maxpoints:
+  print("Yove done a good job, your grade is A+🔥")
+elif (maxpoints - (maxpoints * 2//5))<= points < (maxpoints - (maxpoints//5)):
+  print("You have done a good job, your grade is A")
+elif (maxpoints - (maxpoints * 3//5)) <= points < (maxpoints - (maxpoints * 2//5)): 
+  print("You have done a good job, your grade is B")
+elif (maxpoints - (maxpoints * 4//5)) <= points < (maxpoints - (maxpoints * 3//5)):
+  print("You have done a good job, your grade is C")
+else:
+  print("Failed")
+
+
+
+
+
+
+
+
+
+
 # day 12, debugging 
 print("100 Days of Code QUIZ")
 print()
