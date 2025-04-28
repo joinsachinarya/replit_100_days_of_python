@@ -1,3 +1,44 @@
+# day14, rock paper scissors
+from getpass import getpass as input
+
+p1 = input("player 1 move (R/P/S): ").upper()
+p2 = input("player 2 move (R/P/S): ").upper()
+
+valid_moves = ["R", "P", "S"]
+
+if p1 not in valid_moves or p2 not in valid_moves:
+  print("Invalid move")
+elif p1 == p2:
+  print("Tie, let's try again")
+elif p1 == "R":
+  if p2 == "P":
+    print("Player 2 wins")
+  else:
+    print("Player 1 wins")
+elif p1 == "P":
+  if p2 == "S": 
+    print("Player 2 wins")
+  else: 
+    print("player 1 wins")
+elif p1 == "S":
+  if p2 == "R":
+   print("player 2 wins")
+  else:
+    print("player 1 wins")
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 # day13, marks grading
 skill  = input("what are you learning: ")
 maxpoints = int(input("What is max no. of points: "))
