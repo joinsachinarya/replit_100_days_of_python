@@ -1,3 +1,14 @@
+# day11, leap year
+isLeapYear = input("Is this a leap year?: ")
+if isLeapYear == "yes": 
+  print(60*60*24*366);
+else:
+  print(60*60*24*365)
+
+
+
+
+
 # day10 , math operators
 num1 = int(input("Enter first number: ")) #20
 num2 = int(input("Enter second number: ")) #3
