@@ -1,3 +1,33 @@
+#day 16, infinite loop whith while with break statement 
+while True:
+  print("This program is running")
+  goAgain = input("Go again?: ")
+  if goAgain == "no":
+    break
+print("Aww, I was having a good time 😭")
+
+
+
+
+
+
+# day 15 , while loop
+cnt = 0
+while cnt < 10:
+  print(cnt)
+  cnt = cnt + 1
+
+
+
+
+
+
+
+
+
+
+
+
 # day14, rock paper scissors
 from getpass import getpass as input
 
