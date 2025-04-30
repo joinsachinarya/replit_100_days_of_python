@@ -1,3 +1,16 @@
+#day 19, for loop
+i= 0
+total = 0
+for i in range(10):
+  total +=i
+  print(i, total)
+  
+
+
+
+
+
+
 #day 18, guess the number game 
 myNumber = 100
 count = 0
