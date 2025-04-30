@@ -1,3 +1,25 @@
+#day 18, guess the number game 
+myNumber = 100
+count = 0
+while True:
+  number = int(input("Guess the number, it's between 0 to 1000: "))
+  if number == myNumber:
+    count += 1 
+    print("You guessed it right in " +  str(count)  + " tries")
+    break
+  else: 
+    count += 1
+    continue
+
+
+
+
+
+
+
+
+
+
 #day 17, rock paper scissor with invalid move and tie handling uisng continue and break
 from getpass import getpass as input
 
