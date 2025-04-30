@@ -1,3 +1,57 @@
+#day 17, rock paper scissor with invalid move and tie handling uisng continue and break
+from getpass import getpass as input
+
+valid_moves = ["R", "P", "S"]
+
+while True:
+  
+  p1 = input("player 1 move (R/P/S): ").upper()
+  p2 = input("player 2 move (R/P/S): ").upper()
+  
+  if p1 not in valid_moves or p2 not in valid_moves:
+    print("Invalid move. Moves must be R, P, or S.")
+    continue
+  elif p1 == p2:
+     print("Tie, let's try again")
+     continue
+  elif p1 == "R":
+    if p2 == "P":
+      print("Player 2 wins")
+      break
+    else:
+      print("Player 1 wins")
+      break
+  elif p1 == "P":
+    if p2 == "S": 
+      print("Player 2 wins")
+      break
+    else: 
+      print("player 1 wins")
+      break
+  elif p1 == "S":
+    if p2 == "R":
+      print("player 2 wins")
+      break
+    else:
+     print("player 1 wins")
+     break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #day 16, infinite loop whith while with break statement 
 while True:
   print("This program is running")
