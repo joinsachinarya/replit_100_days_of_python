@@ -1,5 +1,5 @@
 #day 22 , randomize  cheer
-import random
+import random #importing library
 
 print("Math Game\n")
 
