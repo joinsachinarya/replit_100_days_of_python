@@ -1,3 +1,38 @@
+#Day 21, ginti pahada
+print("Math Game\n")
+
+number = int(input("Name your multiples: "))
+score = 0
+
+for i in range(1, 11):
+  ans =  int(input(str(i) + " X " + str(number) +" = "))
+  if(ans / i == number):
+    score+=1
+    print("Right!\n")
+  else: 
+    print("Wrong!\n")
+
+print("You scored " + str(score) + " out of 10")
+
+
+
+
+
+
+
+
+
+
+
+#day 20 rang function parameter
+range(start, end, values:to increment (by default 1 can be given negative also))
+
+
+
+
+
+
+
 #day 19, for loop
 i= 0
 total = 0
