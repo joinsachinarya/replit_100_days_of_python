@@ -1,3 +1,35 @@
+#day 22 , randomize  cheer
+import random
+
+print("Math Game\n")
+
+number = int(input("Name your multiples: "))
+score = 0
+
+for i in range(1, 11):
+  ans =  int(input(str(i) + " X " + str(number) +" = "))
+  if(ans / i == number):
+    score+=1
+    correctAnswerGreet =    random.choice(["Great!", "Awesome!", "Good Job!", "Correct!", "You are amazing!", "Well Done!", "Keep it up!", "You are a math genius!", "Incredible!"])
+    print(correctAnswerGreet + "\n")
+  else: 
+    print("Wrong!\n")
+
+
+if(score == 10):
+  print("You are a math genius!, 10/10")
+else:
+  print("You scored " + str(score) + " out of 10")
+
+
+
+
+
+
+
+
+
+
 #Day 21, ginti pahada
 print("Math Game\n")
 
