@@ -1,3 +1,22 @@
+# day 23 function in python
+
+import random
+
+
+def rollDice():
+    dice = random.randint(1, 6)
+    print("You rolled", dice)
+
+rollDice()
+
+
+
+
+
+
+
+
+
 #day 22 , randomize  cheer
 import random #importing library
 
